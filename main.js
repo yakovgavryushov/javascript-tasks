@@ -22,30 +22,36 @@ let i = enter;          // made for keeping the number that is added every time
 function task4(){
     let enterStart = +prompt('Enter a start number','');
     let enterLines = +prompt('Enter number of lines', '');
-    let enterJump = +prompt('Enter a jump', '')
+    let enterJump = +prompt('Enter a jump', '');
 
     let lines = 0;
     let jump = enterJump;
 
-    let arr = []
+    let arr = [];
     arr.push(enterStart); // shows start number firstly as it is
     enterStart++;
     lines++;
-    alert(arr)
+    alert(arr);
 
-    for(i = enterStart; lines < enterLines; i++){
+    for(let i = enterStart; lines < enterLines; i++){
+        let arr = [];
+        
+        
+        for(i; arr.length <= jump; i++){ 
+            arr.push(i);        
+        }                           // makes a line with incrementing numbers.
 
-        let arr = []
-        do{
-            arr.push(i);            // makes a line with incrementing numbers.
-            i++;
-        }
-        while(arr.length <= jump)   // makes length of lines not more then sum..
-                                    // ..of what it was and what was added.
+        if(arr[0] !== i){               
+            arr.push(i); arr.pop(); i--;
+                                        // because the for loop is omitting first value (probably because of i++ or sth else), it regulates itself with this if statement.
+            }
+            
 
+        // makes length of lines not more then sum..
+        // ..of what it was and what was added.
+        
         jump+=enterJump;            // counts and adds a jump for new line.
         lines++;                    // counts lines to end when needed.
         alert(arr);                 // shows the result.
-
     }
 }
