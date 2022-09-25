@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 48px 48px;
+
+}
+button {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+}
