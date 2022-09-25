@@ -36,20 +36,16 @@ function task4(){
     for(let i = enterStart; lines < enterLines; i++){
         let arr = [];
         
-        
         for(i; arr.length <= jump; i++){ 
             arr.push(i);        
         }                           // makes a line with incrementing numbers.
 
         if(arr[0] !== i){               
             arr.push(i); arr.pop(); i--;
+        }
                                         // because the for loop is omitting first value (probably because of i++ or sth else), it regulates itself with this if statement.
-            }
-            
 
-        // makes length of lines not more then sum..
-        // ..of what it was and what was added.
-        
+
         jump+=enterJump;            // counts and adds a jump for new line.
         lines++;                    // counts lines to end when needed.
         alert(arr);                 // shows the result.
