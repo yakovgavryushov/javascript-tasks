@@ -2,12 +2,17 @@
 function task2(){
     let enter = +prompt('Enter a number:','');
     let i = enter;
+    let arr = [];
+    
     do{ if(i > 1){      // if its more than 1 -- runs as usual, then 3 is 
-        alert((i*2)-1); // the lowest number
+        let impNum = ((i*2)-1);
+        arr.push(impNum);// the lowest number
         i-=1;
     }
-    else return alert(0);   // if it drops lower than 1 --> alert(0) 
-} while(i >= 0)             
+    else if(!arr.includes(0)) arr.push(0);   // if it drops lower than 1 --> push(0)
+    else return alert(arr);      
+} while(i >= 0);   
+   
 }
 
 function task3(){
@@ -44,7 +49,6 @@ function task4(){
             arr.push(i); arr.pop(); i--;
         }
                                         // because the for loop is omitting first value (probably because of i++ or sth else), it regulates itself with this if statement.
-
 
         jump+=enterJump;            // counts and adds a jump for new line.
         lines++;                    // counts lines to end when needed.
