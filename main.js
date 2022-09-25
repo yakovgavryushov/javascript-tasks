@@ -18,11 +18,15 @@ function task2(){
 function task3(){
 let enter = +prompt('Enter a number:', '');
 let i = enter;          // made for keeping the number that is added every time
+let arr = [];
     do{
-        alert(i*i);     // it multiplies itself
+        arr.push(i*i);     // it multiplies itself
         i+=enter;       // and increments by itself after the first loop
+
+        
     } while(i < 30);    
-}
+    return alert(arr);
+} 
 
 function task4(){
     let enterStart = +prompt('Enter a start number','');
