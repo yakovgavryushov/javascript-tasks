@@ -25,9 +25,27 @@ function task4(){
     let enterJump = +prompt('Enter a jump', '')
 
     let lines = 0;
+    let jump = enterJump;
+
+    let arr = []
+    arr.push(enterStart); // shows start number firstly as it is
+    enterStart++;
+    lines++;
+    alert(arr)
+
     for(i = enterStart; lines < enterLines; i++){
-        alert(i);
-        lines++;
+
+        let arr = []
+        do{
+            arr.push(i);            // makes a line with incrementing numbers.
+            i++;
+        }
+        while(arr.length <= jump)   // makes length of lines not more then sum..
+                                    // ..of what it was and what was added.
+
+        jump+=enterJump;            // counts and adds a jump for new line.
+        lines++;                    // counts lines to end when needed.
+        alert(arr);                 // shows the result.
 
     }
 }
