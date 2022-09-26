@@ -82,3 +82,19 @@ function task4(num1, num2, num3){
         task4(enterStart, enterLines, enterJump)
     }
 }
+
+
+
+function taskExam(num){
+    let arr = [];
+
+    let num1 = 1;
+    if(typeof num == "number"){
+        for(let i = 0; num1 < num; i++){
+            arr.push(num1);
+            num1 = i*i;
+
+        } alert(arr)
+
+    } else num = +prompt('Enter a numeber:', 1)
+}
