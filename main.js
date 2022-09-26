@@ -117,8 +117,8 @@ function taskExam2(num1, num2){
         arr.push(i);
         
     } 
-    console.log(arr)
-    alert(arr)
+    console.log(String(arr));
+    alert(String(arr))
 } else {
     numStart = +prompt('Enter a start number', '');
     numDisplayed = +prompt('Enter a display number', '');
