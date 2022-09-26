@@ -33,7 +33,7 @@ let arr = [];
     } while(i < 30);
     return console.log(String(arr));}
     else {
-        enter = +prompt('Enter a number:', '');
+        enter = +prompt('Enter a number:', 1);
         task3(enter)
     }
 }
