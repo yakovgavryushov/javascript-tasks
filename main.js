@@ -10,7 +10,7 @@ function task2(){
         i-=1;
     }
     else if(!arr.includes(0)) arr.push(0);   // if it drops lower than 1 --> push(0)
-    else return console.log(arr);
+    else return console.log(String(arr));
 } while(i >= 0);
 }
 
@@ -24,7 +24,7 @@ let arr = [];
 
         
     } while(i < 30);    
-    return console.log(arr);
+    return console.log(String(arr));
 } 
 
 function task4(){
@@ -39,7 +39,7 @@ function task4(){
     arr.push(enterStart); // shows start number firstly as it is
     enterStart++;
     lines++;
-    console.log(arr);
+    console.log(String(arr));
 
     for(let i = enterStart; lines < enterLines; i++){
         let arr = [];
@@ -56,6 +56,6 @@ function task4(){
         jump+=enterJump;            // counts and adds a jump for new line.
         lines++;                    // counts lines to end when needed.
 
-        console.log(arr);                 // shows the result.
+        console.log(String(arr));                 // shows the result.
     }
 }
