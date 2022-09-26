@@ -86,15 +86,23 @@ function task4(num1, num2, num3){
 
 
 function taskExam(num){
-    let arr = [];
 
+    let arr = [];
     let num1 = 1;
     if(typeof num == "number"){
         for(let i = 0; num1 < num; i++){
             arr.push(num1);
             num1 = i*i;
 
-        } alert(arr)
+        } console.log(String(arr))
+            alert(String(arr))
 
-    } else num = +prompt('Enter a numeber:', 1)
+    } else {
+        num2 = +prompt('Enter a numeber:', 1);
+        taskExam(num2);
+}
+}
+
+function taskExam2(num){
+
 }
