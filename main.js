@@ -103,6 +103,26 @@ function taskExam(num){
 }
 }
 
-function taskExam2(num){
-
+function taskExam2(num1, num2){
+    let arr = [];
+    let numStart = num1;
+    let i = numStart
+    let numDisplayed = num2;
+    if(typeof num1 == "number" || typeof num2 == "number"){
+        arr.push(i);
+    for(i; arr.length < numDisplayed; ){
+        i+=3;
+        arr.push(i);
+        i-=7;
+        arr.push(i);
+        
+    } 
+    console.log(arr)
+    alert(arr)
+} else {
+    numStart = +prompt('Enter a start number', '');
+    numDisplayed = +prompt('Enter a display number', '');
+    taskExam2(numStart, numDisplayed)
+}
+    
 }
